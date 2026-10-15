@@ -1,0 +1,7 @@
+{
+  "name": "quickbar",
+  "version": "1.0.0",
+  "label": "Quick Action Bar",
+  "description": "Barra de atalhos expansível para jogar sem teclado no Android.",
+  "dependencies": ["0ad=0.28.0"]
+}

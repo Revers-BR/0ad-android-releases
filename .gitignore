@@ -1,0 +1,51 @@
+# ============================================================================
+# .gitignore - 0ad-android-releases
+# ============================================================================
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+*~
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build e temporarios
+*.log
+*.tmp
+*.bak
+*.old
+
+# APKs e binarios (usar Releases do GitHub em vez disso)
+*.apk
+*.aab
+*.so
+*.so.bak
+
+# Dados do jogo (muito grandes, nao versionar)
+*.zip
+public/
+mod/
+
+# Keystore e senhas (NUNCA commitar)
+keystore/
+keystore.properties
+*.jks
+*.keystore
+
+# Arquivos locais de teste
+test/
+tmp/
+playground/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node (se houver tooling futuro)
+node_modules/
+package-lock.json
