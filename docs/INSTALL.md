@@ -6,8 +6,11 @@ Guia completo de instalacao do port Android ARM64.
 
 - Dispositivo Android ARM64 (arm64-v8a)
 - Android 5.0+ (API 21+)
-- ~500 MB de espaco livre (alem do APK) para dados do jogo
+- 6 GB de RAM recomendado
+- ~4 GB de espaco livre para os dados do jogo (public.zip + mod.zip + cache)
+- GPU com OpenGL ES 2.0+
 - Cabo USB (para instalacao via ADB) ou gerenciador de arquivos no device
+- (Android 11+) Permissao de armazenamento total obrigatoria
 
 ## Passo 1 - Baixar o APK
 

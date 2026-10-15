@@ -15,11 +15,11 @@ Os APKs estão disponíveis na aba [**Releases**](../../releases) deste reposit�
 | 0.28.0-android-1 | 2026-10-15 | ~32 MB |
 
 **Requisitos:**
-- Android 5.0+ (API 21+) com ARM64
-- ~500 MB de espaço livre para dados do jogo
+- Android 5.0+ (API 21+) com ARM64 (arm64-v8a)
+- 6 GB de RAM recomendado
+- ~4 GB de espaco livre para os dados do jogo
 - GPU com OpenGL ES 2.0+
 - Testado em: POCO F3 (Adreno 650)
-
 ---
 
 ## 🚀 Instalação rápida
