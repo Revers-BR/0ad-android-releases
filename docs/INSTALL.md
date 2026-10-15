@@ -74,13 +74,22 @@ precisam ser copiados separadamente.
 
 ### Onde obter os dados
 
-Opcao A - Do site oficial:
+**Opção A — Baixar o pacote oficial:**
 
-1. Baixe o 0 A.D. 0.28.0 para PC em https://play0ad.com/download/
-2. Instale no PC
-3. Copie de <instalacao>/binaries/data/mods/:
-   - public/ (a pasta inteira)
-   - mod/ (a pasta inteira)
+```bash
+wget https://releases.wildfiregames.com/0ad-0.28.0-unix-data.tar.xz
+tar -xJf 0ad-0.28.0-unix-data.tar.xz
+
+```
+
+**Você precisa de:**
+
+0ad-0.28.0/binaries/data/mods/public/public.zip
+0ad-0.28.0/binaries/data/mods/public/mod.json
+
+0ad-0.28.0/binaries/data/mods/mod/mod.zip
+
+---
 
 Opcao B - Do source oficial:
 
@@ -98,6 +107,7 @@ Estrutura necessaria:
                 |-- mod.zip
             |-- public/
                 |-- public.zip
+                |-- mod.json
     |-- appdata/          (criado automaticamente)
 
 Comandos:
