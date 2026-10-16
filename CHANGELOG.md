@@ -36,10 +36,11 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ### Conhecido (limitações)
 
-- **Multiplayer indisponível.** O lobby e a conexão multiplayer não foram adaptados.
-- **Mods não suportados oficialmente.** Apenas o `quickbar` é mantido.
+- **Multiplayer local funcionando.** Entre Android, Windows, Steam deck usando ip do host.
+- **Multiplayer Online.** O lobby e a conexão multiplayer não foram adaptados.
+- **Mods não suportados oficialmente.** Não testado,  Apenas o `quickbar` é mantido.
 - **Shaders customizados não suportados.** Apenas shaders do `public.zip` são usados.
-- **Sem suporte a teclado físico ou gamepad.**
+- **Sem suporte a teclado físico ou gamepad.** Não testado
 
 ---
 

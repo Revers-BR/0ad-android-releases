@@ -129,7 +129,7 @@ Algumas configuracoes de toque em user.cfg:
 - Sem suporte a teclado fisico (atualmente)
 - Sem suporte a gamepad (planejado)
 - Sem comandos rapidos no HUD (usar o quickbar como paliativo)
-- Multiplayer indisponivel (impede chat e comandos de grupo)
+- Multiplayer online indisponivel ( comandos de grupo)
 
 ## Feedback
 
