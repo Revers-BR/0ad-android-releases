@@ -56,6 +56,8 @@ Ou via ADB:
 
 Os dados do 0 A.D. **não estão incluídos no APK** — precisam ser copiados separadamente.
 
+- https://releases.wildfiregames.com/0ad-0.28.0-unix-data.tar.xz
+
 Você precisa de:
 - `public.zip` (~3.2 GB)
 - `mod.zip` (~89 MB)
