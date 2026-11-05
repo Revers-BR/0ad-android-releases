@@ -7,6 +7,25 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ---
 
+## [0.28.0-android-2] — 2026-11-05
+
+### Adicionado
+
+- **Suporte a drivers Vulkan customizados via `libadrenotools`.**
+  - Carregamento de drivers customizados a partir de `/sdcard/0ad/drivers/<nome>/`.
+  - Configuração via `user.cfg`: `rendererbackend.vulkan.library = "<nome>"`.
+- Suporte a `rendererbackend = "vulkan"` com driver customizado, com fallback automático para o driver Vulkan do sistema em caso de falha.
+
+### Conhecido (limitações)
+
+- **Multiplayer local funcionando.** Entre Android, Windows, Steam Deck usando IP do host.
+- **Multiplayer Online.** O lobby e a conexão multiplayer não foram adaptados.
+- **Mods não suportados oficialmente.** Não testado; apenas o `quickbar` é mantido.
+- **Shaders customizados não suportados.** Apenas shaders do `public.zip` são usados.
+- **Drivers Vulkan customizados ainda em fase de testes.** A compatibilidade varia por GPU (Adreno 6xx/7xx/8xx) e por build do Turnip/PurpleVK. Recomenda-se testar com diferentes versões do driver e, se necessário, usar `TU_DEBUG=sysmem` para contornar problemas de renderização.
+
+---
+
 ## [0.28.0-android-1] — 2026-10-15
 
 ### Adicionado
@@ -38,7 +57,7 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 - **Multiplayer local funcionando.** Entre Android, Windows, Steam deck usando ip do host.
 - **Multiplayer Online.** O lobby e a conexão multiplayer não foram adaptados.
-- **Mods não suportados oficialmente.** Não testado,  Apenas o `quickbar` é mantido.
+- **Mods não suportados oficialmente.** Não testado, Apenas o `quickbar` é mantido.
 - **Shaders customizados não suportados.** Apenas shaders do `public.zip` são usados.
 - **Sem suporte a teclado físico ou gamepad.** Não testado
 
