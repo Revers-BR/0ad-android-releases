@@ -10,9 +10,10 @@ Este repositório distribui **builds não-oficiais do 0 A.D. 0.28.0 para Android
 
 Os APKs estão disponíveis na aba [**Releases**](../../releases) deste repositório.
 
-| Versão | Data | Tamanho |
-|---|---|---|
-| 0.28.0-android-1 | 2026-10-15 | ~32 MB |
+| Versão | Data | Tamanho | Novidades |
+|---|---|---|---|
+| 0.28.0-android-2 | 2026-11-05 | ~32 MB | Suporte a drivers Vulkan customizados |
+| 0.28.0-android-1 | 2026-10-15 | ~32 MB | Primeira release pública |
 
 **Requisitos:**
 - Android 5.0+ (API 21+) com ARM64 (arm64-v8a)
@@ -20,6 +21,15 @@ Os APKs estão disponíveis na aba [**Releases**](../../releases) deste reposit�
 - ~4 GB de espaco livre para os dados do jogo
 - GPU com OpenGL ES 2.0+
 - Testado em: POCO F3 (Adreno 650)
+
+---
+
+## 🎥 Vídeos de teste
+
+Testes de jogabilidade e demonstrações do port em execução no dispositivo real podem ser vistos no perfil do autor:
+
+- [**reddit.com/user/Revers1987**](https://www.reddit.com/user/Revers1987/)
+
 ---
 
 ## 🚀 Instalação rápida
@@ -75,48 +85,11 @@ Toque no ícone **0 A.D.** na tela inicial.
 
 ---
 
-## 📦 Mods auxiliares
+## 🖥️ Drivers Vulkan customizados (Turnip/PurpleVK)
 
-| Mod | Descrição |
-|---|---|
-| [`quickbar`](mods/quickbar/) | Barra de atalhos expansível |
+A partir da versão **0.28.0-android-2**, o port suporta o carregamento de drivers Vulkan customizados via [`libadrenotools`](https://github.com/bylaws/libadrenotools). Isso permite usar drivers como **Turnip** ou **PurpleVK** em GPUs Adreno, o que pode melhorar o desempenho ou a compatibilidade com o backend Vulkan do 0 A.D.
 
-### Contribuindo com mods
+**Como usar:**
 
-Contribuições são bem-vindas!
-
-**Regras:**
-- Compatível com 0 A.D. 0.28.0
-- Não altera unidades, tecnologias ou regras
-- Foca em usabilidade móvel
-- Inclui `mod.json` e `README.md`
-
----
-
-## 🐛 Suporte
-
-Este repositório **suporta apenas**:
-- ✅ O port Android
-- ✅ Mods auxiliares publicados aqui
-- ❌ O jogo em si
-- ❌ Mods de terceiros
-
-### Como gerar logs
-
-    adb pull /sdcard/0ad/appdata/logs/mainlog.html
-
-Anexe pelo menos o `mainlog.html` à issue.
-
----
-
-## 📜 Licença
-
-GPL v2 ou posterior.
-
----
-
-## 🙏 Créditos
-
-- **Wildfire Games** — pelo jogo
-- **0ad-sailfish** — base para o port
-- Todos os contribuidores
+1. Crie a pasta `/sdcard/0ad/drivers/<nome-do-driver>/` e coloque o arquivo `.so` do driver dentro (ex.: `libvulkan_freedreno.so`).
+2. No `user.cfg` do jogo (em `/sdcard/0ad/appdata/config/user.cfg`), adicione:
