@@ -7,6 +7,23 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ---
 
+## [0.28.0-android-3] — 2026-11-14
+
+### Adicionado
+
+- **Conexão ao lobby multiplayer online.** O lobby agora é compilado no port (gloox 1.0.28 com OpenSSL para Android ARM64).
+  - A conexão TLS usa os certificados de CA do próprio Android (`/apex/com.android.conscrypt/cacerts`), sem embutir um `cacert.pem` no APK.
+
+### Conhecido (limitações)
+
+- **Multiplayer local funcionando.** Entre Android, Windows, Steam Deck usando IP do host.
+- **Multiplayer Online.** A conexão ao lobby funciona. Criar e entrar em partidas pelo lobby ainda não foi testado.
+- **Mods não suportados oficialmente.** Não testado; apenas o `quickbar` é mantido.
+- **Shaders customizados não suportados.** Apenas shaders do `public.zip` são usados.
+- **Drivers Vulkan customizados ainda em fase de testes.** A compatibilidade varia por GPU (Adreno 6xx/7xx/8xx) e por build do Turnip/PurpleVK.
+
+---
+
 ## [0.28.0-android-2] — 2026-11-05
 
 ### Adicionado

@@ -12,6 +12,7 @@ Os APKs estão disponíveis na aba [**Releases**](../../releases) deste reposit�
 
 | Versão | Data | Tamanho | Novidades |
 |---|---|---|---|
+| 0.28.0-android-3 | 2026-11-14 | ~32 MB | Conexão ao lobby multiplayer online |
 | 0.28.0-android-2 | 2026-11-05 | ~32 MB | Suporte a drivers Vulkan customizados |
 | 0.28.0-android-1 | 2026-10-15 | ~32 MB | Primeira release pública |
 
